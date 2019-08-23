@@ -6,9 +6,9 @@ services:
   - docker
 
 before_install:
-  - docker build -t http://nexus.yildiz-games.be/repository/docker-internal/test:latest .
+  - docker build -t nexus.yildiz-games.be/repository/docker-internal/test:latest .
 script:
-  - docker images http://nexus.yildiz-games.be/repository/docker-internal/test:latest
+  - docker images nexus.yildiz-games.be/repository/docker-internal/test:latest
   
 after_success:
-  - docker push http://nexus.yildiz-games.be/repository/docker-internal/test:latest;
+  - docker push nexus.yildiz-games.be/repository/docker-internal/test:latest;
