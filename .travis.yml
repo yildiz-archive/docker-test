@@ -11,4 +11,4 @@ script:
   - docker images nexus.yildiz-games.be:80/test:latest
   
 after_success:
-  - docker push nexus.yildiz-games.be:80/test:latest;
+  - docker push http://nexus.yildiz-games.be:80/test:latest;
